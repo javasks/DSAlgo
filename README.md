@@ -1,6 +1,6 @@
 # DSAlgo
 Data Structure and Algo
 
-*Array
-*String
-*LinkedList
+#Array
+#String
+#LinkedList
