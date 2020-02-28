@@ -5,24 +5,43 @@ import java.util.Scanner;
 
 public class StringANagram {
 
-
+//Method1
     static boolean isAnagram(String a, String b) {
-        // Complete the function
 
-        a=a.toLowerCase();
-        b=b.toLowerCase();
+        a = a.toLowerCase();
+        b = b.toLowerCase();
         boolean f = false;
         char[] c = a.toCharArray();
         Arrays.sort(c);
         char[] d = b.toCharArray();
         Arrays.sort(d);
-        String e = new String (c);
-        String g = new String (d);
+        String e = new String(c);
+        String g = new String(d);
         if (e.equals(g)) {
-            f=true;
+            f = true;
         }
         return f;
     }
+
+    //method 2
+    static boolean isAnagrams(String word, String anagram) {
+        word = word.toLowerCase();
+        anagram = anagram.toLowerCase();
+        if (word.length() != anagram.length()) {
+            return false;
+        }
+        char[] chars = word.toCharArray();
+        for (char c : chars) {
+            int index = anagram.indexOf(c);
+            if (index != -1) {
+                anagram = anagram.substring(0, index) + anagram.substring(index + 1, anagram.length());
+            } else {
+                return false;
+            }
+        }
+        return anagram.isEmpty();
+    }
+
 
     public static void main(String[] args) {
 
@@ -30,7 +49,7 @@ public class StringANagram {
         String a = scan.next();
         String b = scan.next();
         scan.close();
-        boolean ret = isAnagram(a, b);
-        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+        boolean ret = isAnagrams(a, b);
+        System.out.println((ret) ? "Anagrams" : "Not Anagrams");
     }
 }
