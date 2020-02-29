@@ -10,7 +10,6 @@ public class StringIntro {
         Scanner sc = new Scanner(System.in);
         String A = sc.next();
         String B = sc.next();
-        /* Enter your code here. Print output to STDOUT. */
         /* Sum lengths */
         System.out.println(A.length() + B.length());
 
