@@ -24,7 +24,11 @@ i = 5: minimum element in [5...6]: 35, already at its position
 7, 9, 12, 26, 28, 35, 87
  */
 
-        import java.util.Arrays;
+
+/**
+ * @author sandeepsingh
+ */
+import java.util.Arrays;
 
 public class SelectionSort {
     public static void selectionSort(int[] array) {

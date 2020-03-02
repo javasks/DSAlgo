@@ -2,7 +2,15 @@ package com.sks.array.sort;
 
 import java.util.Arrays;
 
+/**
+ * @author sandeepsingh
+ */
 public class BubbleSort {
+    /**
+     *
+     * @param array
+     * Bubble sort, biggest element will be at last in each iteration.
+     */
 
     public static void bubbleSort(int[] array) {
         if( array.length < 2 || array == null) {
