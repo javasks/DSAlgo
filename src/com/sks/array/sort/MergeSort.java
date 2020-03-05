@@ -1,5 +1,9 @@
 package com.sks.array.sort;
 
+
+/**
+ * @Author : Sandeep Singh
+ */
 public class MergeSort {
     void merge(int arr[], int beg, int mid, int end) {
 
@@ -40,6 +44,14 @@ public class MergeSort {
             k++;
         }
     }
+
+    /**
+     *
+     * @param arr
+     * @param beg
+     * @param end
+     * Sorting the array and time complexity is n(Log(n))
+     */
 
     void sort(int arr[], int beg, int end) {
         if (beg < end) {
