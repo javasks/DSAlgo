@@ -5,7 +5,7 @@ import java.text.*;
 import java.util.*;
 
 
-class Result {
+public class Solution {
 
     /*
      * Complete the 'findDay' function below.
@@ -27,9 +27,6 @@ class Result {
         return new DateFormatSymbols().getWeekdays()[calendar.get(Calendar.DAY_OF_WEEK)].toUpperCase();
     }
 
-}
-
-public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
@@ -42,7 +39,7 @@ public class Solution {
 
         int year = Integer.parseInt(firstMultipleInput[2]);
 
-        String res = Result.findDay(month, day, year);
+        String res = findDay(month, day, year);
 
         bufferedWriter.write(res);
         bufferedWriter.newLine();
