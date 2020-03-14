@@ -1,4 +1,4 @@
-package com.sks.hkr;
+package com.sks.hkr.java;
 
 import java.io.*;
 import java.text.*;
