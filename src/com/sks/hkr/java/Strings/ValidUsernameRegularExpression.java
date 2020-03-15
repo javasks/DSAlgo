@@ -1,8 +1,8 @@
-package com.sks.hkr.java;
+package com.sks.hkr.java.Strings;
 
 import java.util.Scanner;
 
-class UsernameValidator {
+class ValidUsernameRegularExpression {
     /**
      * one character starting from A to Z/a to z
      * After that 7 to 29 characters from A to Z/a to z/0 to 9/_
@@ -17,7 +17,7 @@ class UsernameValidator {
         while (n-- != 0) {
             String userName = scan.nextLine();
 
-            if (userName.matches(UsernameValidator.regularExpression)) {
+            if (userName.matches(ValidUsernameRegularExpression.regularExpression)) {
                 System.out.println("Valid");
             } else {
                 System.out.println("Invalid");

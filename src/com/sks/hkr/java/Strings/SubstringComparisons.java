@@ -1,8 +1,8 @@
-package com.sks.hkr.java;
+package com.sks.hkr.java.Strings;
 
 import java.util.Scanner;
 
-public class SmallestAndLargestSubstring {
+public class SubstringComparisons {
 
     public static String getSmallestAndLargest(String s, int k) {
         String smallest = s.substring(0, k);

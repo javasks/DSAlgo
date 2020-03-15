@@ -1,11 +1,11 @@
-package com.sks.hkr.java;
+package com.sks.hkr.java.introduction;
 
 import java.io.*;
 import java.text.*;
 import java.util.*;
 
 
-public class Solution {
+public class DateAndTime {
 
     /*
      * Complete the 'findDay' function below.

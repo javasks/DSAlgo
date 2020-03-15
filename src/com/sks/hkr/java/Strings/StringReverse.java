@@ -1,8 +1,8 @@
-package com.sks.hkr.java;
+package com.sks.hkr.java.Strings;
 
 import java.util.*;
 
-public class ReverseString {
+public class StringReverse {
 
     public static void main(String[] args) {
 
