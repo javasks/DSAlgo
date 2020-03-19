@@ -1,4 +1,4 @@
-package com.sks.hkr.java;
+package com.sks.hkr.java.dataStructure;
 
 import java.util.*;
 
